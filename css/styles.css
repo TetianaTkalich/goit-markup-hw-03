@@ -1,0 +1,189 @@
+/* Головний колір білий #FFFFFF; */
+/* Головний колір чорний #2F303A */
+/* Синій колір #2196F3 */
+:root {
+    --primary-text-color: #FFFFFF;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+a {text-decoration: none;}
+
+.adress-header {text-decoration: none; color:inherit;}
+
+.adress-footer {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+
+ul {list-style: none;}
+
+/* page-header */
+.page-header {
+    background-color: var(--primary-text-color)
+}
+
+/*Webstudio */
+.web {
+    color: #2196F3;
+    font-family: 'Raleway' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+/* Site-nav */
+.studio  {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--accent-color)
+}
+
+/* Mail-Tel header and footer  */
+.adress-header:hover, .adress-header:focus {
+    color: var(--accent-color);
+}
+
+.portfolio, .contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color)
+}
+
+.studio-second {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #212121;    
+}
+
+.portfolio-second{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+
+/*  section-tittle*/
+.section-title {
+    background-color: #2F303A;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color)
+}
+
+.title-button {
+    background-color: #2196F3;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color)
+}
+
+/* Наші переваги */
+.title-medium, .name, .services {
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--title-text-color)
+}
+
+.text, .position, .types {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* Чим займаємось */
+.blok-gallery {
+    background-color: #F5F4FA;
+}
+
+.title-gallery-staff {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+/* Staff */
+.staff {
+    background-color: #F5F4FA ;
+}
+
+.title-staff {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+/* Footer */
+.footer {
+    background-color:  #2F303A;
+} 
+
+.adress {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--primary-text-color)
+}
+
+/* Button portfolio */
+.all {
+    background-color: #2196F3;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--primary-text-color)
+}
+
+.button-portfolio {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--title-text-color)
+}
+
+.adress {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
