@@ -7,14 +7,32 @@
     --accent-color: #2196F3;
 }
 
-body {
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+.page-body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
 
-a {text-decoration: none;}
+.link {
+    text-decoration: none;
+}
 
-.adress-header {text-decoration: none; color:inherit;}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px solid red;
+}
+
+.header-link {
+    text-decoration: none;
+    color: inherit;
+}
 
 .adress-footer {
     text-decoration: none;
@@ -22,7 +40,9 @@ a {text-decoration: none;}
     font-style: normal;
 }
 
-ul {list-style: none;}
+ul {
+    list-style: none;
+}
 
 /* page-header */
 .page-header {
@@ -40,7 +60,7 @@ ul {list-style: none;}
 }
 
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway' sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -49,21 +69,10 @@ ul {list-style: none;}
     color: #000000;
 }
 
+
+
 /* Site-nav */
-.studio  {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: var(--accent-color)
-}
-
-/* Mail-Tel header and footer  */
-.adress-header:hover, .adress-header:focus {
-    color: var(--accent-color);
-}
-
-.portfolio, .contacts {
+.header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
@@ -71,26 +80,70 @@ ul {list-style: none;}
     color: var(--title-text-color)
 }
 
-.studio-second {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    color: #212121;    
+/* Mail-Tel header and footer  */
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
 }
 
-.portfolio-second{
+.header-mail {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 16px;
     letter-spacing: 0.02em;
     color: #2196F3;
 }
 
+.header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+/* Header styles */
+
+.page-header {
+    padding: 32px 0;
+    background-color: var(--primary-text-color);
+}
+
+.page-header .container {
+    display: flex;
+    align-items: center;
+}
+
+.page-header .logo {
+    margin-right: 93px;
+}
+       
+
+
+.header-list .item:not(:first-child) {
+    margin-left: 50px;
+    align-items: center;
+}
+
+.header-tel {
+    margin-left: 50px;
+}
+
+
 /*  section-tittle*/
 .section-title {
     background-color: #2F303A;
+    padding-top: 195px;
+    padding-bottom: 195px;
+    text-align: center;
+
 }
+
+.title-button {
+    width: 216px;
+    height: 50px;
+}
+
 
 .title {
     font-weight: 900;
@@ -99,6 +152,16 @@ ul {list-style: none;}
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-text-color)
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.item {
+    width: 270px;
 }
 
 .title-button {
@@ -110,13 +173,17 @@ ul {list-style: none;}
 }
 
 /* Наші переваги */
-.title-medium, .name, .services {
+.title-medium,
+.name,
+.services {
     font-size: 14px;
     line-height: 1.2;
     color: var(--title-text-color)
 }
 
-.text, .position, .types {
+.text,
+.position,
+.types {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -129,20 +196,17 @@ ul {list-style: none;}
     background-color: #F5F4FA;
 }
 
-.title-gallery-staff {
-    font-size: 36px;
-    line-height: 1.2;
+.title-staff {
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
 }
 
 /* Staff */
 .staff {
-    background-color: #F5F4FA ;
+    background-color: #F5F4FA;
 }
 
-.title-staff {
+.title-staff,
+.title-gallery-staff {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -151,10 +215,23 @@ ul {list-style: none;}
     color: #212121;
 }
 
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.staff-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 /* Footer */
 .footer {
-    background-color:  #2F303A;
-} 
+    background-color: #2F303A;
+}
 
 .adress {
     font-weight: 400;
@@ -185,5 +262,8 @@ ul {list-style: none;}
     line-height: 1.7;
     color: #FFFFFF;
     text-decoration: none;
+}
+.logo-footer {
+    padding-top: 60px;
 }
 
