@@ -26,7 +26,7 @@ p {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 1px solid red;
+
 }
 
 .header-link {
@@ -117,8 +117,28 @@ ul {
 .page-header .logo {
     margin-right: 93px;
 }
-       
 
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    margin-right: 255px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.header-contacts {
+    margin-right: 0;
+}
 
 .header-list .item:not(:first-child) {
     margin-left: 50px;
@@ -146,6 +166,9 @@ ul {
 
 
 .title {
+    padding-left: 450px;
+    padding-right: 450px;
+    padding-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -156,12 +179,18 @@ ul {
 
 .feature-list {
     display: flex;
-    flex-wrap: wrap;
-    margin: 15px;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    margin: 0;
+    padding-left: 0;
 }
 
-.item {
+.feature-list .item {
     width: 270px;
+}
+
+.feature-list .item:not(:first-child) {
+    margin-left: 45px;
 }
 
 .title-button {
@@ -171,6 +200,22 @@ ul {
     letter-spacing: 0.06em;
     color: var(--primary-text-color)
 }
+
+/* Наші послуги у портфоліо*/
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 93px;
+    margin: 0;
+}
+
+.button-portfolio {
+    margin-left: 15px;
+}
+
 
 /* Наші переваги */
 .title-medium,
@@ -215,17 +260,33 @@ ul {
     color: #212121;
 }
 
+.blok-gallery {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
 .gallery {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 50px;
+    padding-left: 0;
+}
+
+.photo-gallery:not(:first-child) {
+    margin-left: 30px;
 }
 
 .staff-gallery {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0%;
+    padding-left: 0;
+}
+
+.photo-staff:not(:first-child) {
+    margin-left: 30px;
 }
 
 /* Footer */
@@ -234,6 +295,7 @@ ul {
 }
 
 .adress {
+    text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -256,14 +318,36 @@ ul {
     color: var(--title-text-color)
 }
 
-.adress {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    color: #FFFFFF;
-    text-decoration: none;
-}
+
 .logo-footer {
+    text-decoration: none;
+    padding-left: 0;
+    margin-top: 60;
+}
+
+.all-contacts {
+    padding-left: 0;
+    padding-bottom: 100px;
+
+}
+
+.footer .container {
     padding-top: 60px;
 }
 
+.gallery-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    padding-left: 0;
+}
+
+.gallery-card .gallery-portfolio:not(:first-child) {
+    margin: 10px;
+}
+
+.card {
+    text-decoration: none;
+}
