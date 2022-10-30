@@ -105,8 +105,13 @@ ul {
 /* Header styles */
 
 .page-header {
-    padding: 32px 0;
+    
     background-color: var(--primary-text-color);
+}
+
+.link {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .page-header .container {
@@ -120,9 +125,7 @@ ul {
 
 .header-nav {
     display: flex;
-    align-items: center;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    align-items: center;    
 }
 
 .header-list {
@@ -164,10 +167,7 @@ ul {
     height: 50px;
 }
 
-
 .title {
-    padding-left: 450px;
-    padding-right: 450px;
     padding-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -179,10 +179,13 @@ ul {
 
 .feature-list {
     display: flex;
-    padding-top: 125px;
-    padding-bottom: 125px;
     margin: 0;
     padding-left: 0;
+}
+
+.hero-description {
+    padding-top: 125px;
+    padding-bottom: 125px;
 }
 
 .feature-list .item {
@@ -215,6 +218,10 @@ ul {
 .button-portfolio {
     margin-left: 15px;
 }
+.container-buttons {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
 
 
 /* Наші переваги */
@@ -239,6 +246,8 @@ ul {
 /* Чим займаємось */
 .blok-gallery {
     background-color: #F5F4FA;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .title-staff {
@@ -263,6 +272,7 @@ ul {
 .blok-gallery {
     padding-top: 0;
     padding-bottom: 0;
+    background-color: var(--primary-text-color);
 }
 
 .gallery {
@@ -271,6 +281,10 @@ ul {
     align-items: center;
     margin-top: 50px;
     padding-left: 0;
+}
+.gallery-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .photo-gallery:not(:first-child) {
@@ -283,6 +297,11 @@ ul {
     align-items: center;
     margin: 0%;
     padding-left: 0;
+}
+.staff {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    background: #F5F4FA;;
 }
 
 .photo-staff:not(:first-child) {
@@ -326,22 +345,33 @@ ul {
 }
 
 .all-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
     padding-left: 0;
     padding-bottom: 100px;
 
 }
 
-.footer .container {
-    padding-top: 60px;
+.adress .all-contacts {
+    text-align: inherit;
+
 }
+
+.adress {
+    font-style: normal;
+}
+
 
 .gallery-card {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    padding-top: 50px;
-    padding-bottom: 90px;
     padding-left: 0;
+}
+.footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .gallery-card .gallery-portfolio:not(:first-child) {
