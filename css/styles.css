@@ -9,8 +9,17 @@
 
 h1,
 h2,
+h3,
+h4,
+h5,
+h6,
 p {
     margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .page-body {
@@ -82,18 +91,26 @@ ul {
     color: var(--accent-color);
 }
 
+.header-mail:hover,
+.header-mail:focus {
+    color: var(--accent-color)
+}
+
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--accent-color)
+}
+
+.active {
+    color: var(--accent-color)
+}
+
+
+.header-tel,
 .header-mail {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #2196F3;
-}
-
-.header-tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
 }
@@ -128,10 +145,15 @@ ul {
 .contacts {
     display: flex;
     align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
 }
 
 .contacts .item:not(:first-child) {
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
 .header-list .item:not(:first-child) {
@@ -148,6 +170,9 @@ ul {
     background-color: #2F303A;
     padding: 200px 0;
     text-align: center;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title-button {
@@ -156,7 +181,7 @@ ul {
 }
 
 .title {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -184,6 +209,8 @@ ul {
 }
 
 .title-button {
+    border: 0;
+    cursor: pointer;
     background-color: #2196F3;
     font-size: 16px;
     line-height: 1.9;
@@ -192,25 +219,49 @@ ul {
 }
 
 /* Наші послуги у портфоліо*/
+
+
+.primary {
+    width: 73px;
+    height: 38px;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--primary-text-color)
+   
+}
+
+.secondary {
+    width: 125px;
+    height: 38px;
+    border: 0;
+    cursor: pointer;
+    background-color: #F5F4FA
+    color: var(--title-text-color)
+    
+}
+
 .buttons {
+    width: 1200px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 93px;
-    margin: 0;
-}
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    padding: 11px; 34px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--primary-text-color)
+    
+    }
 
-.button-portfolio {
-    margin-left: 15px;
-}
-
-.container-buttons {
-    padding-top: 10px;
-    padding-bottom: 40px;
-}
-
+    .buttons .secondary:not(:last-child){
+        margin-right: 8px;
+    }
 
 /* Наші переваги */
 .title-medium,
@@ -285,8 +336,29 @@ ul {
     ;
 }
 
+.staff-title {
+    background: var(--primary-text-color);
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 6px;
+}
+
+
 .photo-staff:not(:first-child) {
     margin-left: 30px;
+}
+
+.photo-staff {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    vertical-align: baseline
 }
 
 /* Footer */
@@ -294,7 +366,7 @@ ul {
     background-color: #2F303A;
 }
 
-.footer .container {
+.footer {
     padding: 60px 0;
 }
 
@@ -306,21 +378,7 @@ ul {
     color: var(--primary-text-color)
 }
 
-/* Button portfolio */
-.all {
-    background-color: #2196F3;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    color: var(--primary-text-color)
-}
 
-.button-portfolio {
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--title-text-color)
-}
 
 .logo-footer {
     text-decoration: none;
@@ -353,11 +411,32 @@ ul {
 }
 
 .gallery-card .gallery-portfolio:not(:first-child) {
-    margin: 10px;
+    margin: 15px;
 }
 
 .card {
     text-decoration: none;
+}
+
+.services {
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.types {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+}
+
+.title-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
 }
 
 .padding {
