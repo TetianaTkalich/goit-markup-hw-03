@@ -38,6 +38,8 @@ img {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .header-link {
@@ -124,6 +126,8 @@ ul {
     display: flex;
     align-items: center;
     padding: 10px 0;
+    border-bottom: 1px solid #ececec
+
 }
 
 .page-header .logo {
@@ -140,6 +144,10 @@ ul {
     align-items: center;
     margin-right: 255px;
     padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 32px;
+    margin-bottom: 32px;
 }
 
 .contacts {
@@ -189,6 +197,9 @@ ul {
     letter-spacing: 0.06em;
     color: var(--primary-text-color)
 }
+.title-medium{
+    margin-bottom: 30px;
+}
 
 .feature-list {
     display: flex;
@@ -232,7 +243,6 @@ ul {
     line-height: 1.6;
     text-align: center;
     color: var(--primary-text-color)
-   
 }
 
 .secondary {
@@ -240,9 +250,8 @@ ul {
     height: 38px;
     border: 0;
     cursor: pointer;
-    background-color: #F5F4FA
-    color: var(--title-text-color)
-    
+    color: var(--title-text-color);
+    background-color: F5F4FA
 }
 
 .buttons {
@@ -250,18 +259,28 @@ ul {
     display: flex;
     justify-content: center;
     border: none;
-    border-radius: 6px;
-    padding: 11px; 34px;
+    border-radius: 4px;
+    padding: 11px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     color: var(--primary-text-color)
-    
-    }
+}
 
-    .buttons .secondary:not(:last-child){
-        margin-right: 8px;
-    }
+.button{
+    border-radius: 4px;
+    cursor: pointer; 
+    /*filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+}
+
+.button:hover,
+.button:focus{
+    color: var(--accent-color);
+}
+
+.buttons .secondary:not(:last-child) {
+    margin-right: 8px;
+}
 
 /* Наші переваги */
 .title-medium,
@@ -342,9 +361,20 @@ ul {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 30px;
-    border-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    
 }
 
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 15px;
+}
 
 .photo-staff:not(:first-child) {
     margin-left: 30px;
@@ -410,8 +440,9 @@ ul {
     padding-left: 0;
 }
 
-.gallery-card .gallery-portfolio:not(:first-child) {
-    margin: 15px;
+
+.gallery-card .gallery-portfolio {
+    margin: 10px;
 }
 
 .card {
@@ -436,7 +467,7 @@ ul {
 .title-card {
     padding-top: 30px;
     padding-bottom: 30px;
-   
+
 }
 
 .padding {
