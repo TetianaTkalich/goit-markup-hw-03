@@ -55,6 +55,8 @@ img {
 
 ul {
     list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 /*Webstudio */
@@ -85,7 +87,9 @@ ul {
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--title-text-color)
+    
 }
+
 
 /* Mail-Tel header and footer  */
 .header-link:hover,
@@ -120,14 +124,13 @@ ul {
 /* Header styles */
 .page-header {
     background-color: var(--primary-text-color);
+    border-bottom: 1px solid #ececec
 }
 
 .page-header .container {
     display: flex;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ececec
-
+    
 }
 
 .page-header .logo {
@@ -146,23 +149,29 @@ ul {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 32px;
-    margin-bottom: 32px;
 }
 
 .contacts {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    margin-left: auto;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
 }
+  .header-nav .header-link  {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 .contacts .item:not(:first-child) {
     padding-left: 50px;
 }
+
 
 .header-list .item:not(:first-child) {
     margin-left: 50px;
@@ -198,7 +207,7 @@ ul {
     color: var(--primary-text-color)
 }
 .title-medium{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .feature-list {
@@ -255,6 +264,7 @@ ul {
 }
 
 .buttons {
+    margin-top: 100px;
     width: 1200px;
     display: flex;
     justify-content: center;
@@ -266,7 +276,12 @@ ul {
     line-height: 1.6;
     color: var(--primary-text-color)
 }
+.buttons .item:not(:last-child){
+margin-right: 8px;
+}
+    
 
+ 
 .button{
     border-radius: 4px;
     cursor: pointer; 
@@ -278,9 +293,6 @@ ul {
     color: var(--accent-color);
 }
 
-.buttons .secondary:not(:last-child) {
-    margin-right: 8px;
-}
 
 /* Наші переваги */
 .title-medium,
@@ -433,22 +445,36 @@ ul {
     font-style: normal;
 }
 
+/* Portfolio */
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .gallery-card {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+    margin-top: 45px;
     padding-left: 0;
+    margin: -15px;
 }
 
 
 .gallery-card .gallery-portfolio {
-    margin: 10px;
+    margin: 15px;
 }
 
 .card {
     text-decoration: none;
 }
 
+.name-project{
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+ 
 .services {
     font-size: 18px;
     line-height: 36px;
@@ -464,11 +490,7 @@ ul {
 
 }
 
-.title-card {
-    padding-top: 30px;
-    padding-bottom: 30px;
 
-}
 
 .padding {
     padding: 90px 0;
