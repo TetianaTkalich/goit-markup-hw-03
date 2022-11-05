@@ -5,6 +5,8 @@
     --primary-text-color: #FFFFFF;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --secondary-white-color: #757575;
+    --primary-white-color: #F5F5F5;
 }
 
 h1,
@@ -192,10 +194,6 @@ ul {
     margin-right: auto;
 }
 
-.title-button {
-    width: 216px;
-    height: 50px;
-}
 
 .title {
     margin-bottom: 30px;
@@ -228,25 +226,41 @@ ul {
     margin-left: 30px;
 }
 
-.title-button {
+.button.title-button {
+    white-space: nowrap;
+    width: 216px;
+    height: 50px;
     border: 0;
+    background-color: var(--accent-color);
+    align-items: center;
+    padding: 10px 32px;
     cursor: pointer;
-    background-color: #2196F3;
-    font-size: 16px;
-    line-height: 1.9;
+    font-weight: 700;
+    line-height: calc(30/16);
     letter-spacing: 0.06em;
-    color: var(--primary-text-color)
+    color: var(--primary-white-color)    
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+        
 }
+    
+    .button.title-button:focus
+    .button.title-button:hover {
+        background-color: #188CE8;
+    }
 
 /* Наші послуги у портфоліо*/
 
-.projects-button {
-    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);;
+button.projects-button {    
     padding: 6px 22px;
     border: 0;
     cursor: pointer;
+    background-color: #F5F4FA;
     color: var(--title-text-color);
-    background-color: F5F4FA
+    font-weight: 500;
+    line-height: calc(26/16);
+    border-radius: 4px;
+    border: none;
+    /*filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
     
 }
 
@@ -255,15 +269,10 @@ ul {
     width: 1200px;
     display: flex;
     justify-content: center;
-    border: none;
-    border-radius: 4px;
-    padding: 11px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--primary-text-color)
-    
+        
 }
+
+
 .buttons .item:not(:last-child){
 margin-right: 8px;
 }
@@ -271,18 +280,18 @@ margin-right: 8px;
 .button.projects-button:focus,
 .button.projects-button:hover{
     background-color: var(--accent-color);
-    color: var(--primary-text-color)
+    color: var(--primary-white-color)
 }
  
 .button{
-    border-radius: 4px;
-    cursor: pointer; 
-    /*filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
-}
-
-.button:hover,
-.button:focus{
-    color: var(--accent-color);
+    color: var(--title-text-color);
+    background-color: var(--secondary-white-color);
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    
 }
 
 
